@@ -1,0 +1,137 @@
+import { MastersData } from '../../domain/models/masters';
+
+/**
+ * Master data for the QC Add-Ons screens. Values are taken from the supplied prototype
+ * ("QC+ Add-Ons Prototype v8.html") and the QC Defects master screenshot in the requirements document.
+ */
+const SZ_ALPHA = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL'];
+const SZ_NUM = ['2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24', '26', '28', '30'];
+
+export const MASTERS: MastersData = {
+  colors: [
+    { id: 'DN1154', name: 'Dark Navy', hex: '#1f2c4d' },
+    { id: 'BK1001', name: 'Black', hex: '#1a1a1a' },
+    { id: 'WH1002', name: 'White', hex: '#f4f4f1' },
+    { id: 'OL2210', name: 'Olive', hex: '#6b6b3a' },
+    { id: 'BG3305', name: 'Burgundy', hex: '#6d1f33' },
+    { id: 'CG4120', name: 'Charcoal Grey', hex: '#4a4f57' },
+    { id: 'SB5150', name: 'Sky Blue', hex: '#8fbfe0' },
+    { id: 'CM6180', name: 'Camel', hex: '#b98d5a' },
+    { id: 'DR7240', name: 'Dusty Rose', hex: '#d3a1a6' },
+    { id: 'FG8260', name: 'Forest Green', hex: '#2f5d41' },
+  ],
+  sizes: [...SZ_ALPHA, ...SZ_NUM],
+  alphaSizeCount: SZ_ALPHA.length,
+  articles: [
+    { code: '79944', name: 'NB Surplice Mini Dress', trans: 'TRX-88123', category: 'Apparel', buyer: 'Indochine International', supplier: 'Shivank Udyog Ltd.', hue: ['#2c3a63', '#1a2440'] },
+    { code: '80211', name: 'Evolve Wrap Top', trans: 'TRX-88240', category: 'Apparel', buyer: 'Olsen Mode GmbH', supplier: 'Hangzhou Yuhao Garment', hue: ['#7a4f5c', '#3d2530'] },
+    { code: '80355', name: 'Triton Cargo Pant', trans: 'TRX-88301', category: 'Apparel', buyer: 'Triton International', supplier: 'Ningbo Sunrise Apparel', hue: ['#5b6b4a', '#2c3624'] },
+    { code: '79901', name: 'Satin Trim Tube Top', trans: 'TRX-88098', category: 'Apparel', buyer: 'Indochine International', supplier: 'Choudhary Fashions', hue: ['#8a9bb8', '#4a5a78'] },
+    { code: '80412', name: 'Ribbed Knit Midi Skirt', trans: 'TRX-88412', category: 'Apparel', buyer: 'Olsen Mode GmbH', supplier: 'Hangzhou Yuhao Garment', hue: ['#6d4a5e', '#34202c'] },
+    { code: '80518', name: 'Linen Blend Shirt Dress', trans: 'TRX-88518', category: 'Apparel', buyer: 'Indochine International', supplier: 'Choudhary Fashions', hue: ['#b79a6b', '#6b5636'] },
+    { code: '80633', name: 'Cotton Poplin Shirt', trans: 'TRX-88633', category: 'Apparel', buyer: 'Triton International', supplier: 'Ningbo Sunrise Apparel', hue: ['#7fa3c7', '#3a5a7e'] },
+    { code: '80741', name: 'Quilted Bomber Jacket', trans: 'TRX-88741', category: 'Apparel', buyer: 'Nordic Retail AS', supplier: 'Dhaka Garments Ltd.', hue: ['#3f5b4a', '#1d2d24'] },
+  ],
+  productionOrders: [
+    { pro: 'PO-ASM-13429', articleCode: '79944', style: 'NB Surplice Mini Dress', buyer: 'Indochine International', department: 'Womenswear', season: 'SS27', supplier: 'Shivank Udyog Ltd.', po: '396773', date: '24 Jun 2026', qty: 13428, offer: 2280 },
+    { pro: 'PO-ASM-13512', articleCode: '80211', style: 'Evolve Wrap Top', buyer: 'Olsen Mode GmbH', department: 'Womenswear', season: 'SS27', supplier: 'Hangzhou Yuhao Garment', po: '396801', date: '02 Jul 2026', qty: 8240, offer: 8240 },
+    { pro: 'PO-ASM-13590', articleCode: '80355', style: 'Triton Cargo Pant', buyer: 'Triton International', department: 'Menswear', season: 'SS27', supplier: 'Ningbo Sunrise Apparel', po: '396833', date: '15 Jul 2026', qty: 6120, offer: 6120 },
+    { pro: 'PO-ASM-13388', articleCode: '79901', style: 'Satin Trim Tube Top', buyer: 'Indochine International', department: 'Womenswear', season: 'SS27', supplier: 'Choudhary Fashions', po: '396764', date: '18 Jun 2026', qty: 2280, offer: 2280 },
+    { pro: 'PO-ASM-13534', articleCode: '80211', style: 'Evolve Wrap Top', buyer: 'Olsen Mode GmbH', department: 'Womenswear', season: 'SS27', supplier: 'Hangzhou Yuhao Garment', po: '396812', date: '09 Jul 2026', qty: 5400, offer: 840 },
+    { pro: 'PO-ASM-13611', articleCode: '80355', style: 'Triton Cargo Pant', buyer: 'Triton International', department: 'Menswear', season: 'SS27', supplier: 'Ningbo Sunrise Apparel', po: '396845', date: '22 Jul 2026', qty: 9800, offer: 3100 },
+    { pro: 'PO-ASM-13640', articleCode: '80412', style: 'Ribbed Knit Midi Skirt', buyer: 'Olsen Mode GmbH', department: 'Womenswear', season: 'SS27', supplier: 'Hangzhou Yuhao Garment', po: '396857', date: '30 Jul 2026', qty: 4360, offer: 4360 },
+    { pro: 'PO-ASM-13672', articleCode: '80518', style: 'Linen Blend Shirt Dress', buyer: 'Indochine International', department: 'Womenswear', season: 'SS27', supplier: 'Choudhary Fashions', po: '396866', date: '04 Aug 2026', qty: 22500, offer: 11200 },
+    { pro: 'PO-ASM-13701', articleCode: '80633', style: 'Cotton Poplin Shirt', buyer: 'Triton International', department: 'Menswear', season: 'SS27', supplier: 'Ningbo Sunrise Apparel', po: '396879', date: '11 Aug 2026', qty: 3720, offer: 1860 },
+    { pro: 'PO-ASM-13729', articleCode: '80741', style: 'Quilted Bomber Jacket', buyer: 'Nordic Retail AS', department: 'Outerwear', season: 'AW27', supplier: 'Dhaka Garments Ltd.', po: '396884', date: '18 Aug 2026', qty: 1150, offer: 1150 },
+    { pro: 'PO-ASM-13730', articleCode: '80741', style: 'Quilted Bomber Jacket', buyer: 'Nordic Retail AS', department: 'Outerwear', season: 'AW27', supplier: 'Dhaka Garments Ltd.', po: '396890', date: '18 Aug 2026', qty: 960, offer: 480 },
+    { pro: 'PO-ASM-13431', articleCode: '79944', style: 'NB Surplice Mini Dress', buyer: 'Indochine International', department: 'Womenswear', season: 'SS27', supplier: 'Shivank Udyog Ltd.', po: '396778', date: '27 Jun 2026', qty: 9600, offer: 3200 },
+    { pro: 'PO-ASM-13395', articleCode: '79901', style: 'Satin Trim Tube Top', buyer: 'Indochine International', department: 'Womenswear', season: 'SS27', supplier: 'Choudhary Fashions', po: '396768', date: '21 Jun 2026', qty: 3400, offer: 1700 },
+    { pro: 'PO-ASM-13655', articleCode: '80412', style: 'Ribbed Knit Midi Skirt', buyer: 'Olsen Mode GmbH', department: 'Womenswear', season: 'SS27', supplier: 'Hangzhou Yuhao Garment', po: '396861', date: '02 Aug 2026', qty: 5200, offer: 2600 },
+    { pro: 'PO-ASM-13680', articleCode: '80518', style: 'Linen Blend Shirt Dress', buyer: 'Indochine International', department: 'Womenswear', season: 'SS27', supplier: 'Choudhary Fashions', po: '396870', date: '08 Aug 2026', qty: 14800, offer: 7400 },
+    { pro: 'PO-ASM-13715', articleCode: '80633', style: 'Cotton Poplin Shirt', buyer: 'Triton International', department: 'Menswear', season: 'SS27', supplier: 'Ningbo Sunrise Apparel', po: '396881', date: '14 Aug 2026', qty: 4100, offer: 2050 },
+  ],
+  options: {
+    'Inspection area': ['Production', 'Warehouse', 'Port / pre-shipment'],
+    'Inspection type': ['Inline finishing', 'Inline sewing', 'Pre-final inspection', 'Final inspection'],
+    'Inspection by': ['Internal', 'Third party'],
+    'Inspection company': ['Indochine International', 'Juritex Import Export', 'Third-party lab'],
+    'QC manager': ['Rahul Mehta', 'Moon Kuang', 'Tina Fang'],
+    'Assign to': ['Arun Semwal', 'Moon Kuang', 'Tina Fang', 'Admin Juritex'],
+    'Standard type': ['Standard AQL', 'Custom sampling'],
+    'Inspection standard': ['2.5', '1.5', '4.0'],
+    Category: ['Apparel', 'Accessories', 'Fixed Asset', 'Footwear', 'Furnishings', 'Leather', 'Miscellaneous', 'Services', 'Textile Fabric', 'Trims', 'Yarns'],
+    Factory: ['Shivank Unit 1', 'Shivank Unit 2', 'Hangzhou Plant A', 'Ningbo Plant 1', 'Choudhary Unit 3'],
+    'Evaluation area': ['Sampling room', 'Production floor', 'Buyer showroom'],
+    'Sample type': ['Proto Sample', 'Fit Sample', 'Pre Production Sample', 'Salesman Sample', 'Top of Production'],
+    'Evaluation by': ['Internal', 'Third party'],
+    'Evaluation company': ['Juritex Import Export', 'Indochine International'],
+    'Assigned to': ['Admin Juritex', 'Arun Semwal'],
+    'Buyer contact': ['Anna Becker', 'Lars Olsen', 'Priya Nair'],
+    'Supplier contact': ['Vikram Shivank', 'Li Wen', 'Mei Zhao'],
+    UOM: ['PCS', 'SET', 'MTR'],
+  },
+  pwn: [
+    { key: 'PWN-10456', articleCode: '79944', inspectionType: 'Inline finishing', buyer: 'Indochine International', supplier: 'Shivank Udyog Ltd.', assignTo: 'Moon Kuang', po: '396773', date: '12 Aug 2026' },
+    { key: 'PWN-10312', articleCode: '80211', inspectionType: 'Final inspection', buyer: 'Olsen Mode GmbH', supplier: 'Hangzhou Yuhao Garment', assignTo: 'Tina Fang', po: '396801', date: '20 Aug 2026' },
+    { key: 'PWN-10620', articleCode: '80355', inspectionType: 'Pre-final inspection', buyer: 'Triton International', supplier: 'Ningbo Sunrise Apparel', assignTo: 'Arun Semwal', po: '396833', date: '28 Aug 2026' },
+    { key: 'PWN-10788', articleCode: '79901', inspectionType: 'Final inspection', buyer: 'Indochine International', supplier: 'Choudhary Fashions', assignTo: 'Moon Kuang', po: '396764', date: '02 Sep 2026' },
+    { key: 'PWN-10801', articleCode: '80518', inspectionType: 'Inline sewing', buyer: 'Indochine International', supplier: 'Choudhary Fashions', assignTo: 'Arun Semwal', po: '396866', date: '05 Sep 2026' },
+    { key: 'PWN-10833', articleCode: '80741', inspectionType: 'Final inspection', buyer: 'Nordic Retail AS', supplier: 'Dhaka Garments Ltd.', assignTo: 'Tina Fang', po: '396884', date: '09 Sep 2026' },
+  ],
+  sampleOrders: [
+    { swn: 'SWN-3312', articleCode: '80211', buyer: 'Olsen Mode GmbH', supplier: 'Hangzhou Yuhao Garment', sampleType: 'Pre Production Sample', season: 'SS27' },
+    { swn: 'SWN-3299', articleCode: '79944', buyer: 'Indochine International', supplier: 'Shivank Udyog Ltd.', sampleType: 'Fit Sample', season: 'SS27' },
+    { swn: 'SWN-3340', articleCode: '80355', buyer: 'Triton International', supplier: 'Ningbo Sunrise Apparel', sampleType: 'Fit Sample', season: 'SS27' },
+    { swn: 'SWN-3352', articleCode: '80741', buyer: 'Nordic Retail AS', supplier: 'Dhaka Garments Ltd.', sampleType: 'Proto Sample', season: 'AW27' },
+    { swn: 'SWN-3361', articleCode: '79901', buyer: 'Indochine International', supplier: 'Choudhary Fashions', sampleType: 'Salesman Sample', season: 'SS27' },
+  ],
+  worknotes: [
+    { swn: 'SWN-4021', style: 'Classic Wrap Dress', buyer: 'Olsen Mode GmbH', department: 'Women', season: 'SS27' },
+    { swn: 'SWN-4110', style: 'Boxy Tee', buyer: 'Damart SA', department: 'Men', season: 'SS27' },
+    { swn: 'SWN-4188', style: 'NB Surplice Mini Dress', buyer: 'Indochine International', department: 'Women', season: 'SS27' },
+    { swn: 'SWN-4203', style: 'Quilted Bomber Jacket', buyer: 'Nordic Retail AS', department: 'Men', season: 'AW27' },
+    { swn: 'SWN-4230', style: 'Triton Cargo Pant', buyer: 'Triton International', department: 'Men', season: 'SS27' },
+    { swn: 'SWN-4244', style: 'Evolve Wrap Top', buyer: 'Olsen Mode GmbH', department: 'Women', season: 'SS27' },
+  ],
+
+
+  defectGroups: ['Appearance', 'Fabric & Material', 'Trimmings & Accessories', 'Packing', 'Label & Tag'],
+  defectMaster: {
+    Appearance: [
+      { name: 'Asymmetrical Sleeves', isDefault: true, critical: true },
+      { name: 'Uneven Shoulder', isDefault: true, critical: false },
+      { name: 'Asymmetric Collar', isDefault: false, critical: false },
+      { name: 'Collar Points Not Uniform', isDefault: false, critical: false },
+      { name: 'Poor Ironing', isDefault: false, critical: false },
+      { name: 'Shade Variation Between Parts', isDefault: false, critical: false },
+      { name: 'Shape Distortion', isDefault: false, critical: false },
+      { name: 'Wrinkle Marks', isDefault: false, critical: false },
+    ],
+    'Fabric & Material': [
+      { name: 'Fabric Shade Variation', isDefault: true, critical: false },
+      { name: 'Fabric Defect (Hole)', isDefault: true, critical: true },
+      { name: 'Slubs / Neps', isDefault: false, critical: false },
+      { name: 'Barre / Streaks', isDefault: false, critical: false },
+      { name: 'Fabric Shrinkage', isDefault: false, critical: false },
+    ],
+    'Trimmings & Accessories': [
+      { name: 'Button Missing', isDefault: true, critical: false },
+      { name: 'Zip Not Working', isDefault: true, critical: true },
+      { name: 'Broken Snap', isDefault: false, critical: false },
+      { name: 'Loose Embellishment', isDefault: false, critical: false },
+      { name: 'Elastic Weak', isDefault: false, critical: false },
+    ],
+    Packing: [
+      { name: 'Carton Damage', isDefault: true, critical: true },
+      { name: 'Poly Packing Defect', isDefault: true, critical: false },
+      { name: 'Wrong Carton Marking', isDefault: false, critical: false },
+      { name: 'Incorrect Assortment', isDefault: false, critical: false },
+    ],
+    'Label & Tag': [
+      { name: 'Wrong Size Label', isDefault: true, critical: false },
+      { name: 'Hangtag Missing', isDefault: true, critical: false },
+      { name: 'Care Label Missing', isDefault: false, critical: false },
+      { name: 'Barcode Not Scannable', isDefault: false, critical: false },
+    ],
+  },
+};
